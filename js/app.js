@@ -114,7 +114,7 @@
             xmlhttp = new XMLHttpRequest();
             xmlhttp.open(XML_METHOD, requestUrl, false);
             xmlhttp.onreadystatechange = function() {
-                var xmlResponse;
+            	var xmlResponse;
              
                 if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
                     xmlResponse = JSON.parse(xmlhttp.responseText);
